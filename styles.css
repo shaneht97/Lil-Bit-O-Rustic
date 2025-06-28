@@ -66,15 +66,36 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Project columns */
+/* Project container with background image + overlay */
 .projects-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
+
+  background: url("background.jpg") center center / cover no-repeat;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #f7f2ea;
+  overflow: hidden;
 }
 
-.left-projects, .right-projects {
+/* overlay to darken the wood */
+.projects-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(75,46,20,0.5); /* semi-dark overlay */
+  z-index: 0;
+}
+
+.projects-container ul {
+  position: relative;
+  z-index: 1; /* keep text above overlay */
   list-style: none;
   padding: 0;
 }
@@ -84,7 +105,7 @@ h2 {
 }
 
 .left-projects li a, .right-projects li a {
-  color: #5b3a1d;
+  color: #f7f2ea; /* light text on dark */
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -92,7 +113,7 @@ h2 {
 }
 
 .left-projects li a:hover, .right-projects li a:hover {
-  color: #a17548;
+  color: #d9c4a1;
 }
 
 /* Footer */
