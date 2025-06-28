@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset some defaults */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,76 +12,73 @@ body {
   line-height: 1.6;
 }
 
+/* Center and style header */
 header {
-  background: #5b3a1d; /* dark brown header */
+  background: #5b3a1d; /* dark brown */
   color: #f7f2ea;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Nav links in boxes with spacing */
 nav {
-  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: #f7f2ea;
-  margin: 0 15px;
+  background: #d9c4a1; /* lighter brown */
+  color: #5b3a1d;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 nav a:hover {
-  color: #d9c4a1; /* lighter brown on hover */
+  background: #b08b61; /* slightly darker brown */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 main {
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 h2 {
+  text-align: center;
   color: #5b3a1d;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 ul li {
-  margin-bottom: 0.7rem;
-  list-style-type: square;
+  margin-bottom: 1rem;
 }
 
 ul li a {
   color: #5b3a1d;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 ul li a:hover {
   color: #a17548;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.gallery img {
-  width: 250px;
-  border: 3px solid #d9c4a1;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 footer {
@@ -90,8 +87,4 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-}
-
-a {
-  transition: color 0.3s;
 }
