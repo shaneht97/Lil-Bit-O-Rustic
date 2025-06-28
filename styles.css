@@ -7,14 +7,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f7f2ea; /* light tan */
+  background: url("../images/wood-background.jpg") center center / cover no-repeat fixed;
   color: #4b2e14; /* dark brown text */
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: #5b3a1d; /* dark brown */
+  background: rgba(91,58,29, 0.9); /* semi-transparent dark brown */
   color: #f7f2ea;
   text-align: center;
   padding: 2.5rem 1rem;
@@ -66,36 +66,20 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Project container with background image + overlay */
+/* Project container with light overlay box */
 .projects-container {
-  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
 
-  background: url("background.jpg") center center / cover no-repeat;
+  background: rgba(255,255,255,0.7); /* semi-transparent light background */
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  color: #f7f2ea;
-  overflow: hidden;
-}
-
-/* overlay to darken the wood */
-.projects-container::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(75,46,20,0.5); /* semi-dark overlay */
-  z-index: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .projects-container ul {
-  position: relative;
-  z-index: 1; /* keep text above overlay */
   list-style: none;
   padding: 0;
 }
@@ -105,7 +89,7 @@ h2 {
 }
 
 .left-projects li a, .right-projects li a {
-  color: #f7f2ea; /* light text on dark */
+  color: #5b3a1d;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -113,12 +97,12 @@ h2 {
 }
 
 .left-projects li a:hover, .right-projects li a:hover {
-  color: #d9c4a1;
+  color: #a17548;
 }
 
 /* Footer */
 footer {
-  background: #5b3a1d;
+  background: rgba(91,58,29, 0.9);
   color: #f7f2ea;
   text-align: center;
   padding: 1.5rem;
