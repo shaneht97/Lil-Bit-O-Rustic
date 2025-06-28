@@ -1,4 +1,4 @@
-/* Reset & base styling */
+/* Base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +26,7 @@ header h1 {
   margin-bottom: 1.5rem;
 }
 
-/* Navigation */
+/* Navigation menu */
 nav {
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ nav a:hover {
   box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Main content */
+/* Main */
 main {
   max-width: 900px;
   margin: 3rem auto;
@@ -66,16 +66,24 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Project list */
-ul {
-  list-style: none;
+/* Project columns */
+.projects-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-ul li a {
+.left-projects, .right-projects {
+  list-style: none;
+  padding: 0;
+}
+
+.left-projects li, .right-projects li {
+  margin-bottom: 1rem;
+}
+
+.left-projects li a, .right-projects li a {
   color: #5b3a1d;
   text-decoration: none;
   font-weight: 600;
@@ -83,7 +91,7 @@ ul li a {
   transition: color 0.3s;
 }
 
-ul li a:hover {
+.left-projects li a:hover, .right-projects li a:hover {
   color: #a17548;
 }
 
