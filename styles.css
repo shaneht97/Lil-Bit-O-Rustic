@@ -1,4 +1,4 @@
-/* Reset some defaults */
+/* Reset & base styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,74 +6,80 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #f7f2ea; /* light tan */
   color: #4b2e14; /* dark brown text */
   line-height: 1.6;
 }
 
-/* Center and style header */
+/* Header */
 header {
   background: #5b3a1d; /* dark brown */
   color: #f7f2ea;
-  padding: 2rem;
   text-align: center;
+  padding: 2.5rem 1rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Nav links in boxes with spacing */
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav a {
-  background: #d9c4a1; /* lighter brown */
+  background: #d9c4a1;
   color: #5b3a1d;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 12px 25px;
+  border-radius: 10px;
   font-weight: bold;
-  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s;
 }
 
 nav a:hover {
-  background: #b08b61; /* slightly darker brown */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: #b08b61;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
 }
 
+/* Main content */
 main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
 h2 {
   text-align: center;
+  font-size: 2rem;
   color: #5b3a1d;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
+/* Project list */
 ul {
   list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-ul li {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 ul li a {
   color: #5b3a1d;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.2rem;
   transition: color 0.3s;
 }
 
@@ -81,10 +87,11 @@ ul li a:hover {
   color: #a17548;
 }
 
+/* Footer */
 footer {
   background: #5b3a1d;
   color: #f7f2ea;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
 }
