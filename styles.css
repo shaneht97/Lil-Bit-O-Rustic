@@ -8,13 +8,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: url("background.jpg") center center / cover no-repeat fixed;
-  color: #4b2e14; /* dark brown text */
+  color: #f7f2ea;
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: rgba(91,58,29, 0.9); /* semi-transparent dark brown */
+  background: rgba(91,58,29, 0.9);
   color: #f7f2ea;
   text-align: center;
   padding: 2.5rem 1rem;
@@ -59,24 +59,12 @@ main {
   padding: 0 1rem;
 }
 
-h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #5b3a1d;
-  margin-bottom: 2rem;
-}
-
-/* Project container with light overlay box */
+/* Project container with NO background box */
 .projects-container {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-
-  background: rgba(255,255,255,0.7); /* semi-transparent light background */
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .projects-container ul {
@@ -89,7 +77,7 @@ h2 {
 }
 
 .left-projects li a, .right-projects li a {
-  color: #5b3a1d;
+  color: #ffffff; /* make the project links white */
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -97,7 +85,7 @@ h2 {
 }
 
 .left-projects li a:hover, .right-projects li a:hover {
-  color: #a17548;
+  color: #d9c4a1;
 }
 
 /* Footer */
