@@ -1,0 +1,97 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f2ea; /* light tan */
+  color: #4b2e14; /* dark brown text */
+  line-height: 1.6;
+}
+
+header {
+  background: #5b3a1d; /* dark brown header */
+  color: #f7f2ea;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #f7f2ea;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d9c4a1; /* lighter brown on hover */
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #5b3a1d;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.7rem;
+  list-style-type: square;
+}
+
+ul li a {
+  color: #5b3a1d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul li a:hover {
+  color: #a17548;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  border: 3px solid #d9c4a1;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: #5b3a1d;
+  color: #f7f2ea;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  transition: color 0.3s;
+}
